@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MagazzinoController">
+   <children>
+      <TableView fx:id="ProdottiTable" layoutX="42.0" layoutY="36.0" prefHeight="334.0" prefWidth="678.0">
+        <columns>
+          <TableColumn prefWidth="75.0" />
+          <TableColumn prefWidth="66.0" text="Nome" />
+        </columns>
+      </TableView>
+      <Button fx:id="AggiungiBt" layoutX="42.0" layoutY="407.0" mnemonicParsing="false" onAction="#AggiungiProd" prefHeight="41.0" prefWidth="145.0" text="Aggiungi" />
+      <Button fx:id="EliminaBT" layoutX="309.0" layoutY="407.0" mnemonicParsing="false" onAction="#EliminaProd" prefHeight="41.0" prefWidth="145.0" text="Elimina Prodotto" />
+      <Button fx:id="ModificaBt" layoutX="575.0" layoutY="407.0" mnemonicParsing="false" onAction="#ModificaProd" prefHeight="41.0" prefWidth="145.0" text="Modifica Prodotto" />
+      <Button layoutX="42.0" layoutY="2.0" mnemonicParsing="false" onAction="#Indietro" text="Indietro" />
+      <TextField fx:id="CodEliminaText" layoutX="331.0" layoutY="472.0" prefHeight="25.0" prefWidth="101.0" />
+      <TextField fx:id="CodProdText" layoutX="597.0" layoutY="472.0" prefHeight="25.0" prefWidth="101.0" />
+   </children>
+</Pane>

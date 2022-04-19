@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AggiungiProdController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="178.0" prefHeight="89.0" prefWidth="314.0" text="Aggiungi Prodotto" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NomeText" layoutX="29.0" layoutY="138.0" promptText="Nome" />
+      <TextField fx:id="QuantitaText" layoutX="298.0" layoutY="138.0" prefHeight="25.0" prefWidth="75.0" promptText="Quantità" />
+      <TextField fx:id="PrezzoText" layoutX="492.0" layoutY="138.0" promptText="Prezzo" />
+      <TextArea fx:id="DescText" layoutX="14.0" layoutY="191.0" prefHeight="200.0" prefWidth="200.0" promptText="Descrizione" />
+      <TextField fx:id="ScontatoText" layoutX="492.0" layoutY="179.0" promptText="Scontato" />
+      <TextField fx:id="ImmagineText" layoutX="261.0" layoutY="179.0" promptText="Immagine" />
+      <TextField fx:id="CategoriaText" layoutX="261.0" layoutY="226.0" promptText="Categoria" />
+      <Button layoutX="268.0" layoutY="314.0" mnemonicParsing="false" onAction="#AggiungiBt" prefHeight="57.0" prefWidth="135.0" text="Aggiungi prodotto" />
+      <Label fx:id="ErrLabel" layoutX="236.0" layoutY="391.0" prefHeight="38.0" prefWidth="200.0" text="Errore nella compilazione dei campi" textAlignment="CENTER" textFill="RED" visible="false" />
+   </children>
+</Pane>
